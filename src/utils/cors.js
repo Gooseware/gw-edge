@@ -41,6 +41,6 @@ export function cors(
     actualHeaders['Access-Control-Max-Age'] = maxage || '600'
     actualHeaders['Allow'] = 'Access-Control-Allow-Methods'
   }
-
+  console.log(actualHeaders);
   return actualHeaders
 }

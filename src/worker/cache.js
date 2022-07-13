@@ -2,8 +2,8 @@ import meta from '__vitedge_meta__'
 
 const MIN_CACHE_AGE = 60
 const CACHE_METHODS = ['GET']
-const X_HEADER_CACHE = 'x-vitedge-cached'
-const X_HEADER_BUILD = 'x-vitedge-build'
+const X_HEADER_CACHE = 'x-gw-cached'
+const X_HEADER_BUILD = 'x-gw-build'
 
 export async function getCachedResponse(cacheKey) {
   let response = await caches.default.match(cacheKey)

@@ -8,7 +8,7 @@ export function resolveFnsEndpoint(endpoint, onlyStatic = false) {
 
 export function createResponse(body, params = {}) {
   const response = new Response(body, params)
-  response.headers.append('x-vitedge', 'true')
+  response.headers.append('x-gw', 'true')
 
   return response
 }
